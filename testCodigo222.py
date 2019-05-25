@@ -62,7 +62,7 @@ tf2_output = Set("oContarSequencias", SetType.OUTPUT,
 tf1_output.set_type(SetType.INPUT)
 tf1_output.dependency=tf1._tag
 
-tf2.set_sets([tf1_output, tf2_input, tf2_output])
+tf2.set_sets([tf1_output, tf2_output])
 df.add_transformation(tf2)
 
 #Transormação para criar um alinhamento mafft: CriarAlinhamento
@@ -75,7 +75,7 @@ tf3_output = Set("oCriarAlinhamento", SetType.OUTPUT,
 tf2_output.set_type(SetType.INPUT)
 tf2_output.dependency=tf2._tag
 
-tf3.set_sets([tf2_output, tf3_input, tf3_output])
+tf3.set_sets([tf2_output, tf3_output])
 df.add_transformation(tf3)
 df.save()
 
