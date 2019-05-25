@@ -1,2 +1,2 @@
 # sciphy
-script mafft lab bd
+script mafft da disciplina laboratorio bd
